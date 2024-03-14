@@ -4,7 +4,6 @@ import 'slim-select/dist/slimselect.css';
 import Notiflix from 'notiflix';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-//  змінна для айді
 let breedId = '';
 
 const elements = {
