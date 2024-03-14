@@ -1,0 +1,81 @@
+body {
+    background-image: url(/src/images/23BRVT0890_Darryl_002_Header-1.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-position: right 35% bottom 80%; */
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #022930;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 1.2;
+    text-align: center;
+}
+
+.breed-select {
+    max-width: 400px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-width: 3px;
+    border-style: dashed solid solid dotted;
+    border-color: #8beaf7 #c9f3fa transparent #eafcff;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 20px;
+    top: 31px;
+    border: 10px solid transparent;
+    border-right-color: #edf8fa;
+    transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.is-hidden {
+    display: none;
+}
+
+.cat-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: 20px;
+    text-align: center;
+    background-color: #82ccf7;
+
+}
+
+img {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.about-cat {
+    padding: 0 10px;
+    color: #fcfcfc;
+
+}
